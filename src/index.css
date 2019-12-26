@@ -42,7 +42,7 @@ body {
   margin: 0;
 }
 
-button{
+.button{
   color: white;
   text-transform: uppercase;
   width: 20%;
@@ -53,6 +53,33 @@ button{
   border: none;
   height: 30px;
   background-color: #2ecc71;
+}
+
+.btnUpdate {
+  color: white;
+  font-size: .5rem;
+  margin-right: 5px;
+  text-transform: uppercase;
+  width: 45%;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  height: 30px;
+  background-color: #ee7c2b;
+}
+
+.btnDelete {
+  color: white;
+  font-size: .5rem;
+  text-transform: uppercase;
+  width: 45%;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  height: 30px;
+  background-color: #cc332e;
 }
 
 input{
@@ -91,4 +118,19 @@ input{
   width: 20%; /* Could be more or less, depending on screen size */
   text-align: center;
   text-transform: uppercase;
+}
+
+table {
+  width: 80%;
+  padding: 20px;
+  border-collapse: collapse;
+  font-size: .8rem;
+}
+
+table, tr, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 5px;
 }

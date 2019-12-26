@@ -62,12 +62,11 @@ export default function Product() {
         </div>
 
       </div>
-      <button onClick={addTodo}>Add</button>
+      <button className="button" onClick={addTodo}>Add</button>
 
       <div id="myModal" className="modal">
-
         <div className="modal-content">
-          <p>Success adding {product.name}</p>
+          <p>Successfully added {product.name}</p>
         </div>
       </div>
 
