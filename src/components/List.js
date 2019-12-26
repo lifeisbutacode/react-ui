@@ -48,7 +48,7 @@ export default function Done() {
     .then(res => {
       if(res.data.status === "SUCCESS") {
         setSuccess(true);  
-        setTimeout(hideModal, 1000);
+        hideModal();
       }
     });
   };
