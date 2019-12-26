@@ -5,6 +5,10 @@ body {
   height: 100vh;
 }
 
+label{
+  float:left
+}
+
 .header{
   background-color: #34495e;
   height: 50px;
@@ -48,6 +52,18 @@ body {
   width: 20%;
   display: block;
   margin:auto;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  height: 30px;
+  background-color: #2ecc71;
+}
+
+.buttonModal{
+  color: white;
+  text-transform: uppercase;
+  width: 25%;
+  margin-right:5%;
   cursor: pointer;
   text-decoration: none;
   border: none;
@@ -125,6 +141,7 @@ table {
   padding: 20px;
   border-collapse: collapse;
   font-size: .8rem;
+  margin-left: 10%;
 }
 
 table, tr, th, td {

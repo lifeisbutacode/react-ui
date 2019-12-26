@@ -16,12 +16,16 @@ export default function Product() {
     modal.style.display = "none";
   };
 
-  const addTodo = () => {
-    console.log (product);
+  const addProduct = () => {
     axios
     .post('api/product/create', product)
     .then(res => {
       console.log(res.data)
+      if(res.data.status === "SUCCESS") {
+        setSuccess(true);
+        showModal();
+        setTimeout(hideModal, 1000);
+      }
     });
   };
 
@@ -34,10 +38,7 @@ export default function Product() {
 
   const handleChange = (e) => {
     if(e.key === "Enter") {
-      addTodo();
-      setSuccess(true);
-      showModal();
-      setTimeout(hideModal, 1000);
+      addProduct();
     }
   }
 
@@ -62,7 +63,7 @@ export default function Product() {
         </div>
 
       </div>
-      <button className="button" onClick={addTodo}>Add</button>
+      <button className="button" onClick={addProduct}>Add</button>
 
       <div id="myModal" className="modal">
         <div className="modal-content">
